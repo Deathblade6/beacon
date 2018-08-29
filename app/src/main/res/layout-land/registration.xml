@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/popup_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="163dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="REGISTRATION"
+            android:textColor="#607d8b"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/cp1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="10dp"
+            android:text="Company Name"
+            android:textColor="#607d8b"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cp2"
+            android:layout_width="250dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/grey_ellipse"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/username1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="10dp"
+            android:text="Username"
+            android:textColor="#607d8b"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username2"
+            android:layout_width="250dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/grey_ellipse"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/password1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textColor="#607d8b"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="250dp"
+            android:layout_height="41dp"
+            android:background="@drawable/grey_ellipse"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lk1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="10dp"
+            android:text="License Key"
+            android:textColor="#607d8b"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/lk2"
+            android:layout_width="250dp"
+            android:layout_height="41dp"
+            android:background="@drawable/grey_ellipse"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="231dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/registration_ellipse"
+            android:gravity="center"
+            android:text="REGISTRATION"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="235dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_ellipse"
+            android:text="GO TO LOGIN FORM"
+            android:textColor="#455A64"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

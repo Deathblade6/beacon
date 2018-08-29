@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/HomeScreen"
+            android:icon="@drawable/home"
+            android:title="Home Screen"/>
+        <item android:id="@+id/Settings"
+            android:icon="@drawable/settings"
+            android:title="Settings"/>
+        <item android:id="@+id/WhiteList"
+            android:icon="@drawable/wishlist"
+            android:title="White List"/>
+        <item android:id="@+id/password"
+            android:icon="@drawable/password"
+            android:title="Reset Admin Password"/>
+        <item android:id="@+id/Qr"
+            android:icon="@drawable/qr"
+            android:title="QR/Barcode URL Timeout"/>
+        <item android:id="@+id/Configuration"
+            android:icon="@drawable/config"
+            android:title="Configuration settings"/>
+        <item android:id="@+id/About_us"
+            android:title="About us"
+            android:icon="@drawable/info"/>
+    </group>
+</menu>

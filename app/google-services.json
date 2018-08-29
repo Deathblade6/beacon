@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1093431548328",
+    "firebase_url": "https://beaconurl-78019.firebaseio.com",
+    "project_id": "beaconurl-78019",
+    "storage_bucket": "beaconurl-78019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093431548328:android:0e9c783c7df21e54",
+        "android_client_info": {
+          "package_name": "com.example.deathblade.beaconurl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093431548328-avb94s0vc9ph0p5fds46v9vgk8fksk1s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.deathblade.beaconurl",
+            "certificate_hash": "1932f4f6bd8619b6b988240bcb28699c8941cc08"
+          }
+        },
+        {
+          "client_id": "1093431548328-4q2eoga4bqrsqhg9jilugl86ccua2om3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBq6t_zNTU35QNO7--5YJr8V8bFN4E3oo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093431548328-4q2eoga4bqrsqhg9jilugl86ccua2om3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
