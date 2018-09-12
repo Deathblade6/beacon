@@ -24,7 +24,7 @@ public class BeaconReferenceApplication extends Application implements Bootstrap
     private RegionBootstrap regionBootstrap;
     private BackgroundPowerSaver backgroundPowerSaver;
     private boolean haveDetectedBeaconsSinceBoot = false;
-    private MainActivity monitoringActivity = null;
+    private MainActivity monitoringActivity = new MainActivity();
 
 
     public void onCreate() {
@@ -87,7 +87,7 @@ public class BeaconReferenceApplication extends Application implements Bootstrap
             if (monitoringActivity != null) {
                 // If the Monitoring Activity is visible, we log info about the beacons we have
                 // seen on its display
-                monitoringActivity.updateDisplay("I see a beacon again" );
+//                monitoringActivity.updateDisplay("I see a beacon again" );
             } else {
                 // If we have already seen beacons before, but the monitoring activity is not in
                 // the foreground, we send a notification to the user on subsequent detections.
@@ -95,14 +95,12 @@ public class BeaconReferenceApplication extends Application implements Bootstrap
                 sendNotification();
             }
         }
-
-
-    }
+            }
 
     @Override
     public void didExitRegion(Region region) {
         if (monitoringActivity != null) {
-            monitoringActivity.updateDisplay("I no longer see a beacon.");
+            Log.e("Exit ","now");
         }
     }
 
@@ -133,8 +131,5 @@ public class BeaconReferenceApplication extends Application implements Bootstrap
         notificationManager.notify(1, builder.build());
     }
 
-    public void setMonitoringActivity(MainActivity activity) {
-        this.monitoringActivity = activity;
-    }
 
 }

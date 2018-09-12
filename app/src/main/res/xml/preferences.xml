@@ -3,31 +3,31 @@
     <EditTextPreference
         android:gravity="center"
         android:key="RSSI"
-        android:summary="Enter the minimum RSSI difference to switch \n Value:xxx"
+        android:summary="Enter the minimum RSSI difference to switch"
         android:textAlignment="center"
         android:title="Min difference in RSSI to switch" />
     <EditTextPreference
         android:gravity="center"
         android:key="Distance"
-        android:summary="Enter distance from beacon in meters \n Value:xxx"
+        android:summary="Enter distance from beacon in meters"
         android:textAlignment="center"
         android:title="Beacon distance to advertise" />
     <EditTextPreference
         android:gravity="center"
         android:key="URL"
-        android:summary="Enter time to unload beacon url in seconds \n Value:xxx"
+        android:summary="Enter time to unload beacon url in seconds"
         android:textAlignment="center"
         android:title="Beacon URL unload delay" />
     <EditTextPreference
         android:gravity="center"
         android:key="switch"
-        android:summary="Enter time to switch the URL from one another. Faster values here might include spurious switches in the vicinity of more than on beacon  \n Value:xxx"
+        android:summary="Enter time to switch the URL from one another. Faster values here might include spurious switches in the vicinity of more than on beacon"
         android:textAlignment="center"
         android:title="Switch beacon delay" />
     <EditTextPreference
         android:gravity="center"
         android:key="remove"
-        android:summary="Enter time in seconds after which the beacon will not be tracked after leaving the range \n Value:xxx"
+        android:summary="Enter time in seconds after which the beacon will not be tracked after leaving the range"
         android:textAlignment="center"
         android:title="Beacon remove delay" />
     <CheckBoxPreference android:key="use_RSSI"

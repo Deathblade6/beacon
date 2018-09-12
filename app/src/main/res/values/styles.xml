@@ -11,14 +11,21 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/light_blue</item>
+        <item name="android:statusBarColor">@color/dark_blue</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
-
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="Beacon" parent="AppTheme" >
         <item name="colorPrimary">@color/navigation_bg</item>
+    </style>
+
+    <style name="Updated" parent="AppTheme" >
+        <item name="android:statusBarColor">@color/dark_blue</item>
+        <item name="colorPrimary">@color/light_blue</item>
     </style>
 
 </resources>

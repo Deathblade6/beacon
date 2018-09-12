@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,6 +16,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 
 public class Admin_Settings extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -22,6 +25,8 @@ public class Admin_Settings extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_admin__settings);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -35,7 +40,15 @@ public class Admin_Settings extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        displaySelectedScreen(R.id.HomeScreen);
+        Intent extras = getIntent();
+        if(savedInstanceState==null){
+            if (extras.getStringExtra("Whitelist")!=null){
+                Log.e("here","here");
+                displaySelectedScreen(R.id.WhiteList);
+            }
+        else {
+            displaySelectedScreen(R.id.HomeScreen);
+        }}
     }
 
     @Override
@@ -51,8 +64,8 @@ public class Admin_Settings extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.admin__settings, menu);
-        return true;
+//        getMenuInflater().inflate(R.menu.admin__settings, menu);
+        return false;
     }
 
     @Override
@@ -89,24 +102,20 @@ public class Admin_Settings extends AppCompatActivity
                 fragment = new About_us();
                 break;
             case R.id.Settings:
-                Intent intent = new Intent(this,Settings.class);
-                startActivity(intent);
+                fragment = new Beacon_settings();
                 break;
             case R.id.HomeScreen:
-                fragment = new Home_screen();
+                fragment = new HomeScreen();
                 break;
             case R.id.WhiteList:
-                Intent intent1 = new Intent(this,Whitelist.class);
-                startActivity(intent1);
+                fragment = new whitelist1();
                 break;
-            case R.id.password:
-                fragment = new Admin_password();
+            case R.id.setting:
+                fragment = new App_settings();
                 break;
-            case R.id.Qr:
-                fragment = new QR_Timeout();
-                break;
-            case R.id.Configuration:
-                fragment = new Configuration();
+            case R.id.Logout:
+                Intent intent = new Intent(this,MainActivity.class);
+                startActivity(intent);
                 break;
         }
 

@@ -52,18 +52,18 @@ public class QR_Timeout extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_qr__timeout, container, false);
-        Spinner dropdown =  view.findViewById(R.id.spinner1);
-//create a list of items for the spinner.
-        List<Integer> items = new ArrayList<>();
-        for (int i=1;i<100;i++){
-            items.add(i);
-        }
-//create an adapter to describe how the items are displayed, adapters are used in several places in android.
-//There are multiple variations of this, but this is the basic variant.
-        ArrayAdapter<Integer> adapter = new ArrayAdapter<Integer>(getActivity(), android.R.layout.simple_spinner_dropdown_item, items);
-//set the spinners adapter to the previously created one.
-        dropdown.setAdapter(adapter);
-        dropdown.setSelection(0);
+//        Spinner dropdown =  view.findViewById(R.id.spinner1);
+////create a list of items for the spinner.
+//        List<Integer> items = new ArrayList<>();
+//        for (int i=1;i<100;i++){
+//            items.add(i);
+//        }
+////create an adapter to describe how the items are displayed, adapters are used in several places in android.
+////There are multiple variations of this, but this is the basic variant.
+//        ArrayAdapter<Integer> adapter = new ArrayAdapter<Integer>(getActivity(), android.R.layout.simple_spinner_dropdown_item, items);
+////set the spinners adapter to the previously created one.
+//        dropdown.setAdapter(adapter);
+//        dropdown.setSelection(0);
         return view;
     }
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
-    android:background="@drawable/popup_bg"
+    android:background="#17BECB"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -14,7 +14,7 @@
         android:layout_marginTop="0dp"
         android:gravity="center_vertical|center_horizontal"
         android:text="REGISTRATION"
-        android:textColor="#607d8b"
+        android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -31,16 +31,15 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:text="Company Name"
-        android:textColor="#607d8b"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/cp2"
         android:layout_width="250dp"
         android:layout_height="41dp"
         android:layout_marginStart="0dp"
-        android:background="@drawable/grey_ellipse"
+        android:background="@drawable/blue_ellipse"
         android:ems="10"
         android:paddingStart="10dp" />
 
@@ -52,16 +51,15 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:text="Username"
-        android:textColor="#607d8b"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/username2"
         android:layout_width="250dp"
         android:layout_height="41dp"
         android:layout_marginStart="0dp"
-        android:background="@drawable/grey_ellipse"
+        android:background="@drawable/blue_ellipse"
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="10dp" />
@@ -74,15 +72,14 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:text="Password"
-        android:textColor="#607d8b"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/password2"
         android:layout_width="250dp"
         android:layout_height="41dp"
-        android:background="@drawable/grey_ellipse"
+        android:background="@drawable/blue_ellipse"
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="10dp" />
@@ -95,15 +92,14 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:text="License Key"
-        android:textColor="#607d8b"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/lk2"
         android:layout_width="250dp"
         android:layout_height="41dp"
-        android:background="@drawable/grey_ellipse"
+        android:background="@drawable/blue_ellipse"
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingStart="10dp" />
@@ -113,11 +109,10 @@
         android:layout_width="231dp"
         android:layout_height="41dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/registration_ellipse"
+        android:background="@drawable/white_ellipse"
         android:gravity="center"
         android:text="REGISTRATION"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold" />
+        android:textColor="@android:color/background_dark" />
 
     <Button
         android:id="@+id/button4"
@@ -126,6 +121,5 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/login_ellipse"
         android:text="GO TO LOGIN FORM"
-        android:textColor="#455A64"
-        android:textStyle="bold" />
+        android:textColor="#17BECB" />
 </LinearLayout>

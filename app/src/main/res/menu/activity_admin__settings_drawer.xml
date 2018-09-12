@@ -6,24 +6,21 @@
     <group android:checkableBehavior="single">
         <item android:id="@+id/HomeScreen"
             android:icon="@drawable/home"
-            android:title="Home Screen"/>
+            android:title="Home Setting"/>
         <item android:id="@+id/Settings"
             android:icon="@drawable/settings"
-            android:title="Settings"/>
+            android:title="Beacon Configuration"/>
         <item android:id="@+id/WhiteList"
             android:icon="@drawable/wishlist"
-            android:title="White List"/>
-        <item android:id="@+id/password"
+            android:title="Beacon Whitelist"/>
+        <item android:id="@+id/setting"
             android:icon="@drawable/password"
-            android:title="Reset Admin Password"/>
-        <item android:id="@+id/Qr"
-            android:icon="@drawable/qr"
-            android:title="QR/Barcode URL Timeout"/>
-        <item android:id="@+id/Configuration"
-            android:icon="@drawable/config"
-            android:title="Configuration settings"/>
+            android:title="App Settings"/>
         <item android:id="@+id/About_us"
             android:title="About us"
             android:icon="@drawable/info"/>
+        <item android:id="@+id/Logout"
+            android:title="Logout"
+            android:icon="@drawable/logout"/>
     </group>
 </menu>

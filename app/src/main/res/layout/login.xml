@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
-    android:background="@android:color/background_light"
-    android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:background="#17becb"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView"
@@ -14,7 +14,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="PASSWORD"
-        android:textColor="#607d8b"
+        android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -38,30 +38,20 @@
         android:id="@+id/button"
         android:layout_width="250dp"
         android:layout_height="41dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/registration_ellipse"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/white_ellipse"
         android:text="LOGIN"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/background_dark"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="250dp"
         android:layout_height="41dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/login_ellipse"
-        android:text="CHANGE PASSWORD"
+        android:text="REGISTRATION"
         android:textColor="#455A64"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="250dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/login_ellipse"
-        android:text="GO BACK TO HOMESCREEN"
-        android:textColor="@android:color/background_light"
         android:textStyle="bold" />
 
 </LinearLayout>

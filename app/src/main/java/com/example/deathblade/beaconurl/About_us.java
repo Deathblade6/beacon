@@ -48,6 +48,7 @@ public class About_us extends Fragment {
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
+
     }
 
     @Override
@@ -63,8 +64,8 @@ public class About_us extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        getActivity().setTitle("About us");
         return inflater.inflate(R.layout.fragment_about_us, container, false);
-
     }}
 //
 //    // TODO: Rename method, update argument and hook method into UI event
